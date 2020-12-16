@@ -24,7 +24,7 @@
                                 {{ $todo->title }}
                             </a>
                         </td>
-                        <td>{{ $todo->due_date }}</td>
+                        <td>{{ $todo->getDisplayDate() }}</td>
                         <th>
                             <a href="/todo/{{ $todo->id }}/edit" class="btn btn-success"><i class="fas fa-edit mr-2"></i>編集</a>
                         </th>
